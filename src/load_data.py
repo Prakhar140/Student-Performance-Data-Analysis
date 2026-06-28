@@ -1,0 +1,17 @@
+import pandas as pd
+
+df = pd.read_csv("data/student_dataset_v2.csv")
+print("============== FIRST 5 RECORDS ================")
+print(df.head())
+print()
+print("=================== LAST 5 RECORDS ===================")
+print(df.tail())
+print()
+print("========== DATASET SHAPE ==========")
+print(df.shape)
+print()
+print("========== COLUMN NAMES ==========")
+print(df.columns)
+print()
+print("========== DATA TYPES ==========")
+print(df.dtypes)
