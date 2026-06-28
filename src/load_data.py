@@ -1,17 +1,23 @@
 import pandas as pd
 
-df = pd.read_csv("data/student_dataset_v2.csv")
-print("============== FIRST 5 RECORDS ================")
-print(df.head())
-print()
-print("=================== LAST 5 RECORDS ===================")
-print(df.tail())
-print()
-print("========== DATASET SHAPE ==========")
-print(df.shape)
-print()
-print("========== COLUMN NAMES ==========")
-print(df.columns)
-print()
-print("========== DATA TYPES ==========")
-print(df.dtypes)
+def load_data(file_path="data/student_dataset_v2.csv"):
+    df = pd.read_csv(file_path)
+    return df
+
+
+def display_data(df):
+    print("============== FIRST 5 RECORDS ================")
+    print(df.head())
+    print("\n")
+    print("=================== LAST 5 RECORDS ===================")
+    print(df.tail())
+    print("\n")
+    print("========== DATASET SHAPE ==========")
+    print(df.shape)
+    print("\n")
+    print("========== COLUMN NAMES ==========")
+    print(df.columns)
+    print("\n")
+    print("========== DATA TYPES ==========")
+    print(df.dtypes)
+    print("\n")

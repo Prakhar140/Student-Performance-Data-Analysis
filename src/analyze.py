@@ -1,0 +1,17 @@
+def inspect_data(df):
+
+    print("========== MISSING VALUES ==========")
+    print(df.isnull().sum())
+    print("\n")
+    print("========== DUPLICATE RECORDS ==========")
+    print(df.duplicated().sum())
+    print("\n")
+    print("========== DESCRIPTIVE STATISTICS ==========")
+    print(df.describe())
+    print("\n")
+    print("========== MEMORY USAGE ==========")
+    memory = df.memory_usage(deep=True)
+    print(memory)
+    print("\n")
+    print("========== DATASET INFO ==========")
+    df.info()
