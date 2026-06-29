@@ -37,6 +37,10 @@ def transform_data(df):
 def filter_data(df):
 
     toppers = df[df["Grade"] == "A"]
+    # toppers = df.sort_values(
+    #     by = "PerformanceScore",
+    #     ascending = False
+    # ).head(10)
 
     failed = df[df["Result"] == "Fail"]
 
@@ -49,6 +53,7 @@ def filter_data(df):
     low_attendance.to_csv("output/low_attendance.csv", index=False)
     high_study_hours.to_csv("output/high_study_hours.csv", index=False)
 
-    print("Filtered data saved to output")
+    print("✅Filtered data saved to output")
+    print("\n")
 
     return df

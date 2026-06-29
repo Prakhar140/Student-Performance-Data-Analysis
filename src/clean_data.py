@@ -31,6 +31,6 @@ def clean_data(df):
 
     df.to_csv("output/cleaned_data.csv", index = False)
 
-    print("Cleaned data saved to output")
+    print("✅Cleaned data saved to output")
 
     return df
