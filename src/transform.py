@@ -37,11 +37,7 @@ def transform_data(df):
 def filter_data(df):
 
     toppers = df[df["Grade"] == "A"]
-    # toppers = df.sort_values(
-    #     by = "PerformanceScore",
-    #     ascending = False
-    # ).head(10)
-
+    
     failed = df[df["Result"] == "Fail"]
 
     low_attendance = df[df["Attendance"] < 75]

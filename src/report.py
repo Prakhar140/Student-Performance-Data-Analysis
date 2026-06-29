@@ -26,14 +26,5 @@ def generate_report(df):
     grade_distribution.to_csv("output/grade_distribution.csv", index=False)
 
     print("\n✅Report generated successfully.")
-
-    # report_df = pd.DataFrame(report)
-
-    # report_df.to_csv("output/report.csv", index=False)
-
-    # print("\n✅Report generated successfully.")
-
-    # print("\nGrade Distribution:")
-    # print(df["Grade"].value_counts())
-
+   
     print("\n")
