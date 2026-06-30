@@ -9,6 +9,7 @@ from src.analyze import(
     statistical_analysis
 )
 from src.report import generate_report
+from src.visualize import plot_grade_distribution
 
 def main():
     print("====== Student Performance Data Analysis ======")
@@ -35,6 +36,8 @@ def main():
     statistical_analysis(df)
 
     generate_report(df)
+
+    plot_grade_distribution(df)
 
 if __name__ == "__main__":
     main()

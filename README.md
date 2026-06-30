@@ -14,7 +14,6 @@ This project is developed using Python and Pandas to perform data loading, clean
 - Filter student datasets
 - Perform statistical analysis
 - Generate reports
-- Export processed CSV files
 
 ## Project Structure
 
@@ -29,7 +28,9 @@ main.py
 python main.py
 ```
 
-## Output Files
+## Output 
+
+Running the project generates:
 
 - cleaned_data.csv
 - toppers.csv
@@ -37,3 +38,4 @@ python main.py
 - low_attendance.csv
 - high_study_hours.csv
 - report.csv
+- grade_distribution.png
